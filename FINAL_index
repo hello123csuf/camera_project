@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+.vertical-menu {
+    width: 290px;
+    height: 490px;
+    overflow-y: auto;
+}
+
+.vertical-menu a {
+    background-color: #f1f1f1;
+    color: black;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+}
+
+.vertical-menu a:hover {
+    background-color: #f1f1f1;
+}
+
+.vertical-menu a.active {
+    background-color: #f1f1f1;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+/* Style the tab */
+.tab {
+    float: left;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    width: 17%;
+    height: 490px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    float: center;
+    padding: 0px 12px;
+    border: 0px solid #ccc;
+    width: 100%;
+    border-left: none;
+    height: 0px;
+}
+</style>
+</head>
+
+
+
+
+
+<body>
+
+
+  <font size="1">CATHEDRAL CITY</font>
+
+  <font size="1">MIS - INFORMATION TECHNOLOGY</font>
+
+
+
+
+
+
+<br>
+  <a href="index.html"><font size="1">CAMERAS</font></a>
+  
+  <a href="view.html"><font size="1">VIEWS</font></a>
+<p></p><p></p><p>
+
+
+
+
+
+
+
+
+<div class="tab">
+<div class="vertical-menu">
+
+  <button class="tablinks" onclick="openCity(event, 'CAM1')" id="defaultOpen">Interview Room Side View</button>
+
+
+
+
+  <button class="tablinks" onclick="openCity(event, 'CAM2')">Interview Room Ceiling View
+  </button>
+  <button class="tablinks" onclick="openCity(event, 'CAM12')">PD Jail Booking</button>
+  <button class="tablinks" onclick="openCity(event, 'CAM11')">Jail Doors</button>
+
+
+  <button class="tablinks" onclick="openCity(event, 'CAM4')">Jail Cell 2</button>
+  <button class="tablinks" onclick="openCity(event, 'CAM3')">Jail Cell 3</button>
+
+  <button class="tablinks" onclick="openCity(event, 'CAM5')">Jail Cell 4</button>
+   <button class="tablinks" onclick="openCity(event, 'CAM6')">Jail Cell 5</button>
+
+
+
+
+  <button class="tablinks" onclick="openCity(event, 'CAM16')">Jail Money Desk</button>
+  <button class="tablinks" onclick="openCity(event, 'CAM13')">Jail Hallway</button>
+
+  <button class="tablinks" onclick="openCity(event, 'CAM14')">Jail Interview Ceiling View</button>
+  <button class="tablinks" onclick="openCity(event, 'CAM15')">Jail Interview Side View</button>
+
+
+
+
+<button class="tablinks" onclick="openCity(event, 'CAM8')">Detective Room 6 Frontal View</button>
+
+<button class="tablinks" onclick="openCity(event, 'CAM9')">Detective Room 6 Ceiling View</button>
+<button class="tablinks" onclick="openCity(event, 'CAM10')">PD Detective Hallway</button>
+  <button class="tablinks" onclick="openCity(event, 'CAM7')">PD Locker Hallway</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<button class="tablinks" onclick="openCity(event, 'CAM17')">PACT Ceiling View</button>
+<button class="tablinks" onclick="openCity(event, 'CAM18')">PACT Corner View</button>
+<button class="tablinks" onclick="openCity(event, 'CAM19')">Parking Structure Elevator</button>
+<button class="tablinks" onclick="openCity(event, 'CAM20')">Parking Structure N Entrance</button>
+<button class="tablinks" onclick="openCity(event, 'CAM21')">Parking Structure NE Stairs</button>
+<button class="tablinks" onclick="openCity(event, 'CAM22')">Parking Structure NW Stairs</button>
+<button class="tablinks" onclick="openCity(event, 'CAM23')">Parking Structure PD Gate </button>
+<button class="tablinks" onclick="openCity(event, 'CAM24')">Parking Structure S Entrance</button>
+<button class="tablinks" onclick="openCity(event, 'CAM25')">Parking Structure SE 360 view</button>
+
+
+  <button class="tablinks" onclick="openCity(event, 'CAM26')">Paseo Area</button>
+  <button class="tablinks" onclick="openCity(event, 'CAM27')">PD BackLot North</button>
+  <button class="tablinks" onclick="openCity(event, 'CAM28')">PD BackLot South</button>
+
+  <button class="tablinks" onclick="openCity(event, 'CAM29')">PD Basement</button>
+  <button class="tablinks" onclick="openCity(event, 'CAM30')">PD Cascade</button>
+  <button class="tablinks" onclick="openCity(event, 'CAM31')">PD Property Inside</button>
+  <button class="tablinks" onclick="openCity(event, 'CAM32')">PD Property Outside</button>
+  <button class="tablinks" onclick="openCity(event, 'CAM33')">PD Record Hallway</button>
+  <button class="tablinks" onclick="openCity(event, 'CAM34')">PD Record Lobby</button>
+  <button class="tablinks" onclick="openCity(event, 'CAM35')">PD Sallyport North</button>
+  <!--<button class="tablinks" onclick="openCity(event, 'CAM36')">PD Sallyport South</button>-->
+
+  <button class="tablinks" onclick="openCity(event, 'CAM37')">PD Sallyport South</button>
+
+  <button class="tablinks" onclick="openCity(event, 'CAM38')">Server Room 1</button>
+
+  <button class="tablinks" onclick="openCity(event, 'CAM39')">Server Room 2</button>
+
+
+
+
+</div>
+</div>
+
+
+
+
+<div id="CAM1" class="tabcontent">
+<iframe width="709" height="485" src="http://10.30.1.53/mjpg/1/video.mjpg" scrolling="no" noresize="noresize" border="0" alt="If no image is displayed, there might be too many viewers, please wait while the image is loading.">
+  <p>Your browser does not support iframes.</p>
+</iframe>
+</div>
+
+
+  <div id="CAM2" class="tabcontent">
+    <iframe width="709" height="485" src="http://10.30.1.53/mjpg/2/video.mjpg" scrolling="no" noresize="noresize" border="0" alt="If no image is displayed, there might be too many viewers, please wait while the image is loading.">
+      <p>Your browser does not support iframes.</p>
+    </iframe>
+  </div>
+
+
+<!--<div id="CAM2" class="tabcontent">
+  <iframe width="710" height="485" src="http://10.30.1.38/mjpg/video.mjpg">
+  <p>Your browser does not support iframes.</p>
+</iframe>
+</div>-->
+
+
+  <div id="CAM3" class="tabcontent">
+    <iframe width="709" height="485" src="http://10.30.1.23/mjpg/video.mjpg" scrolling="no" noresize="noresize" border="0" alt="If no image is displayed, there might be too many viewers, please wait while the image is loading.">
+      <p>Your browser does not support iframes.</p>
+    </iframe>
+  </div>
+
+
+  <!--<div id="CAM3" class="tabcontent">
+  <iframe width="710" height="490" src="http://10.30.1.23/mjpg/video.mjpg">
+  <p>Your browser does not support iframes.</p>
+</iframe>
+  </div>-->
+
+
+  <div id="CAM4" class="tabcontent">
+    <iframe width="709" height="485" src="http://10.30.1.25/mjpg/video.mjpg" scrolling="no" noresize="noresize" border="0" alt="If no image is displayed, there might be too many viewers, please wait while the image is loading.">
+      <p>Your browser does not support iframes.</p>
+    </iframe>
+  </div>
+
+
+<!--<div id="CAM4" class="tabcontent">
+  <iframe width="710" height="490" src="http://10.30.1.25/mjpg/video.mjpg">
+  <p>Your browser does not support iframes.</p>
+</iframe>
+</div>-->
+
+
+  <div id="CAM5" class="tabcontent">
+    <iframe width="709" height="485" src="http://10.30.1.36/mjpg/video.mjpg" scrolling="no" noresize="noresize" border="0" alt="If no image is displayed, there might be too many viewers, please wait while the image is loading.">
+      <p>Your browser does not support iframes.</p>
+    </iframe>
+  </div>
+
+
+  <!--<div id="CAM5" class="tabcontent">
+    <iframe width="710" height="490" src="http://10.30.1.36/mjpg/video.mjpg">
+    <p>Your browser does not support iframes.</p>
+  </iframe>
+  </div>-->
+
+
+  <div id="CAM6" class="tabcontent">
+    <iframe width="709" height="485" src="http://10.30.1.37/mjpg/video.mjpg" scrolling="no" noresize="noresize" border="0" alt="If no image is displayed, there might be too many viewers, please wait while the image is loading.">
+      <p>Your browser does not support iframes.</p>
+    </iframe>
+  </div>
+
+
+  <!--<div id="CAM6" class="tabcontent">
+    <iframe width="710" height="490" src="http://10.30.1.37/mjpg/video.mjpg">
+    <p>Your browser does not support iframes.</p>
+  </iframe>
+  </div>-->
+
+
+  <!--1280x800 actual size-->
+  <div id="CAM7" class="tabcontent">
+    <iframe width="709" height="485" src="http://10.30.1.40/mjpg/video.mjpg" scrolling="no" noresize="noresize" border="0" alt="If no image is displayed, there might be too many viewers, please wait while the image is loading.">
+      <p>Your browser does not support iframes.</p>
+    </iframe>
+  </div>
+
+
+  <!--<div id="CAM7" class="tabcontent">
+    <iframe width="710" height="490" src="http://10.30.1.40/mjpg/video.mjpg">
+    <p>Your browser does not support iframes.</p>
+  </iframe>
+  </div>-->
+
+
+  <!--1280x800 actual size-->
+  <div id="CAM8" class="tabcontent">
+    <iframe width="709" height="485" src="http://10.30.1.47/mjpg/1/video.mjpg" scrolling="no" noresize="noresize" border="0" alt="If no image is displayed, there might be too many viewers, please wait while the image is loading.">
+      <p>Your browser does not support iframes.</p>
+    </iframe>
+  </div>
+
+<!--<div id="CAM8" class="tabcontent">
+  <iframe width="710" height="490" src="http://10.30.1.47/mjpg/video.mjpg">
+  <p>Your browser does not support iframes.</p>
+</iframe>
+</div>-->
+
+
+<!--<div id="CAM9" class="tabcontent">
+  <iframe width="710" height="490" src="http://10.30.1.28/mjpg/video.mjpg">
+  <p>Your browser does not support iframes.</p>
+</iframe>
+</div>-->
+
+  <div id="CAM9" class="tabcontent">
+    <iframe width="709" height="485" src="http://10.30.1.47/mjpg/2/video.mjpg" scrolling="no" noresize="noresize" border="0" alt="If no image is displayed, there might be too many viewers, please wait while the image is loading.">
+      <p>Your browser does not support iframes.</p>
+    </iframe>
+  </div>
+
+
+
+
+  <div id="CAM10" class="tabcontent">
+    <iframe width="709" height="485" src="http://10.30.1.45/mjpg/video.mjpg" scrolling="no" noresize="noresize" border="0" alt="If no image is displayed, there might be too many viewers, please wait while the image is loading.">
+      <p>Your browser does not support iframes.</p>
+    </iframe>
+  </div>
+
+<!--<div id="CAM10" class="tabcontent">
+  <iframe width="710" height="490" src="http://10.30.1.45/mjpg/video.mjpg" scrolling="auto" noresize="noresize">
+  <p>Your browser does not support iframes.</p>
+</iframe>
+</div>-->
+
+<!--<div id="CAM11" class="tabcontent">
+  <iframe width="710" height="490" src="http://10.30.1.29/mjpg/video.mjpg">
+  <p>Your browser does not support iframes.</p>
+</iframe>
+</div>-->
+
+
+  <div id="CAM11" class="tabcontent">
+    <iframe width="709" height="485" src="http://10.30.1.43/mjpg/video.mjpg" scrolling="no" noresize="noresize" border="0" alt="If no image is displayed, there might be too many viewers, please wait while the image is loading.">
+      <p>Your browser does not support iframes.</p>
+    </iframe>
+  </div>
+
+
+  <div id="CAM12" class="tabcontent">
+    <iframe width="709" height="485" src="http://10.30.1.35/mjpg/video.mjpg" scrolling="no" noresize="noresize" border="0" alt="If no image is displayed, there might be too many viewers, please wait while the image is loading.">
+      <p>Your browser does not support iframes.</p>
+    </iframe>
+  </div>
+
+
+<!--<div id="CAM12" class="tabcontent">
+  <iframe width="710" height="490" src="http://10.30.1.43/mjpg/video.mjpg">
+  <p>Your browser does not support iframes.</p>
+</iframe>
+</div>-->
+
+
+  <div id="CAM13" class="tabcontent">
+    <iframe width="709" height="485" src="http://10.30.1.57/mjpg/video.mjpg" scrolling="no" noresize="noresize" border="0" alt="If no image is displayed, there might be too many viewers, please wait while the image is loading.">
+      <p>Your browser does not support iframes.</p>
+    </iframe>
+  </div>
+
+
+  <!--<div id="CAM13" class="tabcontent">
+    <iframe width="710" height="490" src="http://10.30.1.35/mjpg/video.mjpg">
+    <p>Your browser does not support iframes.</p>
+  </iframe>
+  </div>-->
+
+
+  <div id="CAM14" class="tabcontent">
+    <iframe width="709" height="485" src="http://10.30.1.55/mjpg/1/video.mjpg" scrolling="no" noresize="noresize" border="0" alt="If no image is displayed, there might be too many viewers, please wait while the image is loading.">
+      <p>Your browser does not support iframes.</p>
+    </iframe>
+  </div>
+
+
+<!--<div id="CAM14" class="tabcontent">
+  <iframe width="710" height="490" src="http://10.30.1.57/mjpg/video.mjpg">
+  <p>Your browser does not support iframes.</p>
+</iframe>
+</div>-->
+
+  <div id="CAM15" class="tabcontent">
+    <iframe width="709" height="485" src="http://10.30.1.55/mjpg/2/video.mjpg" scrolling="no" noresize="noresize" border="0" alt="If no image is displayed, there might be too many viewers, please wait while the image is loading.">
+      <p>Your browser does not support iframes.</p>
+    </iframe>
+  </div>
+
+
+<!--<div id="CAM15" class="tabcontent">
+  <iframe width="710" height="490" src="http://10.30.1.55/mjpg/2/video.mjpg">
+  <p>Your browser does not support iframes.</p>
+</iframe>
+</div>-->
+
+
+
+  <div id="CAM16" class="tabcontent">
+    <iframe width="709" height="485" src="http://10.30.1.42/mjpg/video.mjpg" scrolling="no" noresize="noresize" border="0" alt="If no image is displayed, there might be too many viewers, please wait while the image is loading.">
+      <p>Your browser does not support iframes.</p>
+    </iframe>
+  </div>
+
+
+
+
+ <!-- <div id="CAM16" class="tabcontent">
+  <iframe width="710" height="490" src="http://10.30.1.42/mjpg/video.mjpg">
+  <p>Your browser does not support iframes.</p>
+</iframe>
+</div>-->
+
+
+
+  <div id="CAM17" class="tabcontent">
+    <iframe width="709" height="485" src="http://10.30.1.41/mjpg/video.mjpg" scrolling="no" noresize="noresize" border="0" alt="If no image is displayed, there might be too many viewers, please wait while the image is loading.">
+      <p>Your browser does not support iframes.</p>
+    </iframe>
+  </div>
+
+
+
+
+
+
+<!--<div id="CAM17" class="tabcontent">
+  <iframe width="710" height="490" src="http://10.30.1.40/mjpg/video.mjpg">
+  <p>Your browser does not support iframes.</p>
+</iframe>
+</div>-->
+
+
+
+
+  <div id="CAM18" class="tabcontent">
+    <iframe width="709" height="485" src="http://10.30.1.74/mjpg/video.mjpg" scrolling="no" noresize="noresize" border="0" alt="If no image is displayed, there might be too many viewers, please wait while the image is loading.">
+      <p>Your browser does not support iframes.</p>
+    </iframe>
+  </div>
+
+
+
+<!--<div id="CAM18" class="tabcontent">
+  <iframe width="710" height="490" src="http://10.30.1.41/mjpg/video.mjpg">
+  <p>Your browser does not support iframes.</p>
+</iframe>
+</div>-->
+
+
+
+  <div id="CAM19" class="tabcontent">
+    <iframe width="709" height="485" src="http://192.168.30.53/mjpg/video.mjpg" scrolling="no" noresize="noresize" border="0" alt="If no image is displayed, there might be too many viewers, please wait while the image is loading.">
+      <p>Your browser does not support iframes.</p>
+    </iframe>
+  </div>
+
+
+
+<!--<div id="CAM19" class="tabcontent">
+  <iframe width="710" height="490" src="http://10.30.1.74/mjpg/video.mjpg">
+  <p>Your browser does not support iframes.</p>
+</iframe>
+</div>-->
+
+
+  <div id="CAM20" class="tabcontent">
+    <iframe width="709" height="485" src="http://192.168.30.55/mjpg/video.mjpg" scrolling="no" noresize="noresize" border="0" alt="If no image is displayed, there might be too many viewers, please wait while the image is loading.">
+      <p>Your browser does not support iframes.</p>
+    </iframe>
+  </div>
+
+
+
+<!--<div id="CAM20" class="tabcontent">
+  <iframe width="710" height="490" src="http://192.168.30.53/mjpg/video.mjpg">
+  <p>Your browser does not support iframes.</p>
+</iframe>
+</div>-->
+
+
+  <div id="CAM21" class="tabcontent">
+    <iframe width="709" height="485" src="http://192.168.30.54/mjpg/video.mjpg" scrolling="no" noresize="noresize" border="0" alt="If no image is displayed, there might be too many viewers, please wait while the image is loading.">
+      <p>Your browser does not support iframes.</p>
+    </iframe>
+  </div>
+
+
+
+<!--<div id="CAM21" class="tabcontent">
+  <iframe width="710" height="490" src="http://192.168.30.55/mjpg/video.mjpg">
+  <p>Your browser does not support iframes.</p>
+</iframe>
+</div>-->
+
+
+
+  <div id="CAM22" class="tabcontent">
+    <iframe width="709" height="485" src="http://192.168.30.56/mjpg/video.mjpg" scrolling="no" noresize="noresize" border="0" alt="If no image is displayed, there might be too many viewers, please wait while the image is loading.">
+      <p>Your browser does not support iframes.</p>
+    </iframe>
+  </div>
+
+
+
+<!--<div id="CAM22" class="tabcontent">
+  <iframe width="710" height="490" src="http://192.168.30.54/mjpg/video.mjpg">
+  <p>Your browser does not support iframes.</p>
+</iframe>
+</div>-->
+
+
+
+  <div id="CAM23" class="tabcontent">
+    <iframe width="709" height="485" src="http://192.168.30.57/mjpg/video.mjpg" scrolling="no" noresize="noresize" border="0" alt="If no image is displayed, there might be too many viewers, please wait while the image is loading.">
+      <p>Your browser does not support iframes.</p>
+    </iframe>
+  </div>
+
+
+
+
+
+<!--<div id="CAM23" class="tabcontent">
+  <iframe width="710" height="490" src="http://192.168.30.56/mjpg/video.mjpg">
+  <p>Your browser does not support iframes.</p>
+</iframe>
+</div>-->
+
+
+  <div id="CAM24" class="tabcontent">
+    <iframe width="709" height="485" src="http://192.168.30.52/mjpg/video.mjpg" scrolling="no" noresize="noresize" border="0" alt="If no image is displayed, there might be too many viewers, please wait while the image is loading.">
+      <p>Your browser does not support iframes.</p>
+    </iframe>
+  </div>
+
+
+  <!--<div id="CAM24" class="tabcontent">
+    <iframe width="710" height="490" src="http://192.168.30.57/mjpg/video.mjpg">
+    <p>Your browser does not support iframes.</p>
+  </iframe>
+  </div>-->
+
+
+  <div id="CAM25" class="tabcontent">
+    <iframe width="709" height="485" src="http://192.168.30.51/mjpg/video.mjpg" scrolling="no" noresize="noresize" border="0" alt="If no image is displayed, there might be too many viewers, please wait while the image is loading.">
+      <p>Your browser does not support iframes.</p>
+    </iframe>
+  </div>
+
+
+
+
+<!--<div id="CAM25" class="tabcontent">
+  <iframe width="710" height="490" src="http://192.168.30.52/mjpg/video.mjpg">
+  <p>Your browser does not support iframes.</p>
+</iframe>
+</div>-->
+
+
+
+  <div id="CAM26" class="tabcontent">
+    <iframe width="709" height="485" src="http://10.30.1.71/mjpg/video.mjpg" scrolling="no" noresize="noresize" border="0" alt="If no image is displayed, there might be too many viewers, please wait while the image is loading.">
+      <p>Your browser does not support iframes.</p>
+    </iframe>
+  </div>
+
+
+<!--<div id="CAM26" class="tabcontent">
+  <iframe width="710" height="490" src="http://192.168.30.51/mjpg/video.mjpg">
+  <p>Your browser does not support iframes.</p>
+</iframe>
+</div>-->
+
+
+
+  <div id="CAM27" class="tabcontent">
+    <iframe width="709" height="485" src="http://10.30.1.72/mjpg/video.mjpg" scrolling="no" noresize="noresize" border="0" alt="If no image is displayed, there might be too many viewers, please wait while the image is loading.">
+      <p>Your browser does not support iframes.</p>
+    </iframe>
+  </div>
+
+
+<!--<div id="CAM27" class="tabcontent">
+  <iframe width="710" height="490" src="http://10.30.1.71/mjpg/video.mjpg">
+  <p>Your browser does not support iframes.</p>
+</iframe>
+</div>-->
+
+
+
+
+  <div id="CAM28" class="tabcontent">
+    <iframe width="709" height="485" src="http://10.30.1.73/mjpg/video.mjpg" scrolling="no" noresize="noresize" border="0" alt="If no image is displayed, there might be too many viewers, please wait while the image is loading.">
+      <p>Your browser does not support iframes.</p>
+    </iframe>
+  </div>
+
+
+
+<!--<div id="CAM28" class="tabcontent">
+  <iframe width="710" height="490" src="http://10.30.1.72/mjpg/video.mjpg">
+  <p>Your browser does not support iframes.</p>
+</iframe>
+</div>-->
+
+
+  <div id="CAM29" class="tabcontent">
+    <iframe width="709" height="485" src="http://10.30.1.75/mjpg/video.mjpg" scrolling="no" noresize="noresize" border="0" alt="If no image is displayed, there might be too many viewers, please wait while the image is loading.">
+      <p>Your browser does not support iframes.</p>
+    </iframe>
+  </div>
+
+
+
+<!--<div id="CAM28" class="tabcontent">
+  <iframe width="710" height="490" src="http://10.30.1.73/mjpg/video.mjpg">
+  <p>Your browser does not support iframes.</p>
+</iframe>
+</div>-->
+
+
+
+  <div id="CAM30" class="tabcontent">
+    <iframe width="709" height="485" src="http://10.30.1.58/mjpg/video.mjpg" scrolling="no" noresize="noresize" border="0" alt="If no image is displayed, there might be too many viewers, please wait while the image is loading.">
+      <p>Your browser does not support iframes.</p>
+    </iframe>
+  </div>
+
+
+<!--<div id="CAM29" class="tabcontent">
+  <iframe width="710" height="490" src="http://10.30.1.75/mjpg/video.mjpg">
+  <p>Your browser does not support iframes.</p>
+</iframe>
+</div>-->
+
+
+
+  <div id="CAM31" class="tabcontent">
+    <iframe width="709" height="485" src="http://10.30.1.54/mjpg/video.mjpg" scrolling="no" noresize="noresize" border="0" alt="If no image is displayed, there might be too many viewers, please wait while the image is loading.">
+      <p>Your browser does not support iframes.</p>
+    </iframe>
+  </div>
+
+
+
+
+<!--<div id="CAM30" class="tabcontent">
+  <iframe width="710" height="490" src="http://10.30.1.58/mjpg/video.mjpg">
+  <p>Your browser does not support iframes.</p>
+</iframe>
+</div>-->
+
+
+  <div id="CAM32" class="tabcontent">
+    <iframe width="709" height="485" src="http://10.30.1.50/mjpg/video.mjpg" scrolling="no" noresize="noresize" border="0" alt="If no image is displayed, there might be too many viewers, please wait while the image is loading.">
+      <p>Your browser does not support iframes.</p>
+    </iframe>
+  </div>
+
+
+
+<!--<div id="CAM31" class="tabcontent">
+  <iframe width="710" height="490" src="http://10.30.1.54/mjpg/video.mjpg">
+  <p>Your browser does not support iframes.</p>
+</iframe>
+</div>-->
+
+
+  <div id="CAM33" class="tabcontent">
+    <iframe width="709" height="485" src="http://10.30.1.46/mjpg/video.mjpg" scrolling="no" noresize="noresize" border="0" alt="If no image is displayed, there might be too many viewers, please wait while the image is loading.">
+      <p>Your browser does not support iframes.</p>
+    </iframe>
+  </div>
+
+
+<!--<div id="CAM32" class="tabcontent">
+  <iframe width="710" height="490" src="http://10.30.1.50/mjpg/video.mjpg">
+  <p>Your browser does not support iframes.</p>
+</iframe>
+</div>-->
+
+
+  <div id="CAM34" class="tabcontent">
+    <iframe width="709" height="485" src="http://10.30.1.39/mjpg/video.mjpg" scrolling="no" noresize="noresize" border="0" alt="If no image is displayed, there might be too many viewers, please wait while the image is loading.">
+      <p>Your browser does not support iframes.</p>
+    </iframe>
+  </div>
+
+
+  <!--<div id="CAM33" class="tabcontent">
+    <iframe width="710" height="490" src="http://10.30.1.46/mjpg/video.mjpg">
+    <p>Your browser does not support iframes.</p>
+  </iframe>
+  </div>-->
+
+
+
+  <div id="CAM35" class="tabcontent">
+    <iframe width="709" height="485" src="http://10.30.1.26/mjpg/video.mjpg" scrolling="no" noresize="noresize" border="0" alt="If no image is displayed, there might be too many viewers, please wait while the image is loading.">
+      <p>Your browser does not support iframes.</p>
+    </iframe>
+  </div>
+
+
+
+<!--<div id="CAM34" class="tabcontent">
+  <iframe width="710" height="490" src="http://10.30.1.39/mjpg/video.mjpg">
+  <p>Your browser does not support iframes.</p>
+</iframe>
+</div>-->
+
+<!--
+  <div id="CAM36" class="tabcontent">
+    <iframe width="709" height="485" src="http://10.30.1.26/mjpg/video.mjpg" scrolling="no" noresize="noresize" border="0" alt="If no image is displayed, there might be too many viewers, please wait while the image is loading.">
+      <p>Your browser does not support iframes.</p>
+    </iframe>
+  </div>-->
+
+
+
+<!--<div id="CAM35" class="tabcontent">
+  <iframe width="710" height="490" src="http://10.30.1.46/mjpg/video.mjpg">
+  <p>Your browser does not support iframes.</p>
+</iframe>
+</div>-->
+
+
+
+  <div id="CAM37" class="tabcontent">
+    <iframe width="709" height="485" src="http://10.30.1.33/mjpg/video.mjpg" scrolling="no" noresize="noresize" border="0" alt="If no image is displayed, there might be too many viewers, please wait while the image is loading.">
+      <p>Your browser does not support iframes.</p>
+    </iframe>
+  </div>
+
+
+
+
+<!--<div id="CAM36" class="tabcontent">
+  <iframe width="710" height="490" src="http://10.30.1.3/mjpg/video.mjpg">
+  <p>Your browser does not support iframes.</p>
+</iframe>
+</div>-->
+
+
+  <!--
+<div id="CAM37" class="tabcontent">
+  <iframe width="710" height="490" src="http://10.30.1.26/mjpg/video.mjpg">
+  <p>Your browser does not support iframes.</p>
+</iframe>
+</div>-->
+
+
+  <!--<div id="CAM38" class="tabcontent">
+  <iframe width="710" height="490" src="http://10.30.1.33/mjpg/video.mjpg">
+  <p>Your browser does not support iframes.</p>
+</iframe>
+</div>-->
+
+
+
+
+<!--<div id="CAM39" class="tabcontent">
+  <iframe width="710" height="490" src="http://10.30.1.48/mjpg/video.mjpg">
+  <p>Your browser does not support iframes.</p>
+</iframe>
+</div>-->
+
+
+
+  <div id="CAM38" class="tabcontent">
+    <iframe width="709" height="485" src="http://10.30.1.48/mjpg/video.mjpg" scrolling="no" noresize="noresize" border="0" alt="If no image is displayed, there might be too many viewers, please wait while the image is loading.">
+      <p>Your browser does not support iframes.</p>
+    </iframe>
+  </div>
+
+
+  <div id="CAM39" class="tabcontent">
+    <iframe width="709" height="485" src="http://10.30.1.21/mjpg/video.mjpg" scrolling="no" noresize="noresize" border="0" alt="If no image is displayed, there might be too many viewers, please wait while the image is loading.">
+      <p>Your browser does not support iframes.</p>
+    </iframe>
+  </div>
+
+
+
+
+  <!--
+<div id="CAM40" class="tabcontent">
+  <iframe width="710" height="490" src="http://10.30.1.21/mjpg/video.mjpg">
+  <p>Your browser does not support iframes.</p>
+</iframe>
+</div>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+     
+</body>
+</html> 
